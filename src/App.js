@@ -24,7 +24,7 @@ function App() {
   // const display = (name,id) => {
   //   console.log(name,id);
   // }
-  // display("jeet",855); // function eall
+  // display("jeet",855); // function eall 
 
   // let grid = [12,18,26,27,46,"x"]
 
