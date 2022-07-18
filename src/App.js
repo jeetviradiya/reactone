@@ -1,46 +1,105 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
-  //--------------array-------------//
+function App() 
+  // let Data = [
+  //   {
+  //     id: 101,
+  //     name: "Abacavir",
+  //     quantity: 25,
+  //     price: 150,
+  //     expiry: 2022,
+  //     status: true,
+  //   },
+  //   {
+  //     id: 102,
+  //     name: "Eltrombopag",
+  //     quantity: 90,
+  //     price: 550,
+  //     expiry: 2021,
+  //     status: true,
+  //   },
+  //   {
+  //     id: 103,
+  //     name: "Meloxicam",
+  //     quantity: 85,
+  //     price: 450,
+  //     expiry: 2025,
+  //     status: false,
+  //   },
+  //   {
+  //     id: 104,
+  //     name: "Allopurinol",
+  //     quantity: 50,
+  //     price: 600,
+  //     expiry: 2023,
+  //     status: true,
+  //   },
+  //   {
+  //     id: 105,
+  //     name: "Phenytoin",
+  //     quantity: 63,
+  //     price: 250,
+  //     expiry: 2021,
+  //     status: false,
+  //   },
+  // ];
 
-  // let arr = [1, 2, 3, 4, 5];
+  // return (
+  //   <div>
+  //     {Data.map((v, i) => {
+  //       return (
+  //         <div key={i}>
+  //           <h1>{v.name}</h1>
+  //           <h3>{v.price}</h3>
+  //         </div>
+  //       );
+  //     })}
+  //   </div>
+  // );
 
-  //copy arr
+  //filter
 
-  // let arr1 = [...arr];
-  // console.log(arr1);
+  // let fData = Data.filter((v, i) => v.expiry >= 2022);
+  // console.log(fData);
 
-  //merging
+  //reduce
 
-  // let arr2 = [12, 23];
-  // let ans = [...arr, ...arr2];
-  // console.log(ans);
+  // let totalprice = fData.reduce((acc, v, i) => acc + v.price, 0 );
+  // console.log(totalprice);
 
-  //dstructuring
+  function app1() {
+   let data1 = [
+     
+    {
+      grid: 123,
+      name: 'Amit',
+      fees: 50000,
+      attendance: 80
+    },
+    {
+      grid: 456,
+      name: 'Ajay',
+      fees: 70000,
+      attendance: 90
+    },
+    {
+      grid: 856,
+      name: 'Ashish',
+      fees: 30000,
+      attendance: 65
+    } ,
 
-  // const [fist, second, third, xyz, fifth] = arr;
-  // console.log(second);
+    {
+      grid: 762,
+      name: 'Raj',
+      fees: 90000,
+      attendance: 70
+    },
+  
 
-  //------------object-------------------//
+   ]
 
-  // let obj = { id: 101, name: "amit" };
-
-  //copy object
-
-  // let obj1 = { ...obj };
-  // console.log(obj1);
-
-  //merge object
-
-  // let obj2 = { id: 102, place: "surat" };
-  // let ans2 = { ...obj, ...obj2 };
-  // console.log(ans2);
-
-  //destructoring
-
-  // let { id, name } = obj;
-  //   console.log(name, obj, id);
 
   return (
     <div className="App">
