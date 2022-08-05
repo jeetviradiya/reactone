@@ -8,13 +8,18 @@ function Cityf(props) {
         setCityName('amdabad')
     }
 
+   
     return (
         <div>
             <p>{CityName}</p>
             <button onClick={() => chengecity()}>
                 chengecity
             </button>
-        </div>
+            {
+        props.Country_name === 'India' ? <p>Taj Mahel</p> : <p>London Eye</p>
+    }
+        </div >
+        
     );
 }
 

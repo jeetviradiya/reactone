@@ -14,6 +14,8 @@ function Statef(props) {
             <button onClick={() => chengestate()}>
                 chengestate
             </button>
+            
+            <city Country_name ={CountryName} />
         </div>
     );
 }

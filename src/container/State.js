@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import City from './City';
 
 class State extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            stateName: 'india'
+            cityName: 'india'
         }
     }
 
 
     changestateName = () => {
-        this.setState ({
-              stateName:'canada'
+        this.setState({
+            cityName: 'canada'
         })
     }
 
@@ -21,6 +22,7 @@ class State extends Component {
             <div>
                 <p>{this.state.cityName}</p>
                 <button onClick={() => this.changestateName()}  > changestateName</button>
+                <City name={this.state.cityName} />
             </div>
         );
     }
