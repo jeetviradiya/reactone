@@ -1,0 +1,39 @@
+import React, { Component } from 'react';
+
+class time extends Component {
+
+    //provides initial valiue
+
+    constructor(props) {
+        super(props);
+
+        this.State = {
+            time: new Date()
+
+        }
+    }
+
+    tick = () => {
+        this.setState({
+            time: new Date()
+        })
+    }
+
+    componentDidMount = () => {
+        setInterval(() => this.tick(), 1000)
+    }
+
+    componentWillUnmount=()=>{
+        clearInterval(this.Time);
+        
+    render() {
+        return (
+            <div>
+                <p>{this.state.Time.toLocaleTimeString()}</p>
+            </div>
+        );
+    }
+}
+
+
+export default Time;

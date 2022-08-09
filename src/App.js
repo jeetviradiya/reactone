@@ -1,9 +1,6 @@
 import React from 'react';
-import City from './container/City';
-import Cityf from './container/Cityf';
-import Fees from './container/fees';
-import State from './container/State';
-import Statef from './container/Statef';
+
+import Time from './container/Time';
 
 
 function App(props) {
@@ -13,7 +10,8 @@ function App(props) {
       {/* <City/> */}
       {/* <Statef/> */}
       {/* <Cityf/> */}
-      <Fees/>
+      <Time />
+      
     </div>
   );
 }

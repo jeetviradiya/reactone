@@ -4,7 +4,7 @@ function Cityf(props) {
 
     const [CityName, setCityName] = useState('surat');
 
-    const chengecity = () => {
+    const changecity = () => {
         setCityName('amdabad')
     }
 
@@ -12,8 +12,8 @@ function Cityf(props) {
     return (
         <div>
             <p>{CityName}</p>
-            <button onClick={() => chengecity()}>
-                chengecity
+            <button onClick={() => changecity()}>
+                changecity
             </button>
             {
         props.Country_name === 'India' ? <p>Taj Mahel</p> : <p>London Eye</p>

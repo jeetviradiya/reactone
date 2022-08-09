@@ -15,7 +15,7 @@ function Statef(props) {
                 chengestate
             </button>
             
-            <city Country_name ={CountryName} />
+            {/* <city Country_name ={CountryName} /> */}
         </div>
     );
 }
